@@ -165,7 +165,8 @@ $total = [...$lg,...$sm, ...$xs];
 		<div class="cards">
 		@foreach ($total as $item)
 			<div class="card">
-			<img src="{{$item['src']}}" alt="">
+			<img src="{{$item['src']}}" alt="{{$item['titolo']}}">
+			<p class="titolo-card">{{$item['titolo']}}</p>
 
 			</div>
 

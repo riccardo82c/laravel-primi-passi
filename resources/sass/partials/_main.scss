@@ -11,6 +11,13 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        background-color: #457c8549;
+        padding: 50px;
+
+        .btn-cta {
+            margin-top: 50px;
+        }
+
 
     }
 
@@ -20,18 +27,36 @@ main {
         flex-direction: row;
         justify-content: center;
 
-        .card {
+        padding: 10px 0;
 
-            flex-basis: content;
+        .card {
+            padding: 5px;
+
 
 
             img {
-                max-width: 400px;
+                max-width: 380px;
+                border-radius: 10px;
+                border: 1px solid $button-bcg;
+                opacity: 0.85;
+                transition: all .4s;
+
+                &:hover {
+
+                    opacity: 1;
+                }
             }
 
+
+
+            .titolo-card {
+                text-align: center;
+                padding: 5px;
+                color: $button-bcg;
+                background-color: white;
+
+            }
         }
-
-
     }
 }
 

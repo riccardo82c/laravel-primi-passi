@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +8,21 @@
 
 body {
     background-image: url('https://images8.alphacoders.com/522/thumb-1920-522915.jpg');
-
+    font-family: 'Poppins',
+        sans-serif;
     width: 100%;
 }
 
 
 h1 {
     font-size: 40px;
+    color: $font-primary;
 
 }
 
 h2 {
     font-size: 30px;
+    color: $font-primary;
 }
 
 ul {
@@ -28,6 +33,10 @@ ul {
 a {
     color: white;
     text-decoration: none;
+
+    &:hover {
+        color: #333;
+    }
 }
 
 .container {
@@ -38,14 +47,11 @@ a {
 }
 
 button {
-
     border: 1px solid $button-bcg;
     background-color: white;
     color: $button-bcg;
-    border-radius: 10px;
     font-size: 25px;
-
-
+    transition: all .2s;
 
     &:hover {
         border: 1px solid white;
@@ -60,7 +66,6 @@ button {
     a {
         display: block;
         padding: 20px 30px;
-
         color: $button-bcg;
     }
 }

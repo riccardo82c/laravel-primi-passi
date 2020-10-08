@@ -12,7 +12,7 @@
 <header>
 	<div class="container">
 	<nav>
-		<img src="" alt="logo">
+		<img src="{{ asset('img/logo2.png') }}" alt="">
 		<ul>
 		<li><a href="{{route('home')}}">Home</a></li>
 		<li><a href="{{route('prod')}}">Prodotti</a></li>
