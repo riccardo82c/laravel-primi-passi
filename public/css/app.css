@@ -6,7 +6,6 @@
 
 body {
   background-image: url("https://images8.alphacoders.com/522/thumb-1920-522915.jpg");
-  height: 100vh;
   width: 100%;
 }
 
@@ -94,5 +93,24 @@ main .center-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main .cards .card {
+  flex-basis: content;
+}
+
+main .cards .card img {
+  max-width: 400px;
+}
+
+.full-heigth {
+  height: calc(100vh - 70px);
 }
 

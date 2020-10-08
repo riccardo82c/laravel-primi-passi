@@ -144,10 +144,14 @@ foreach ($cards as $card) {
 	} elseif ($card['tipo'] == 'cortissima'){
 		$xs[]= $card;
 	}
-	
 }
 
-dd($lg,$sm, $xs);
+/* $total[] = $lg;
+$total[] = $sm;
+$total[] = $xs; */
+
+$total = [...$lg,...$sm, ...$xs];
+/* dd($total); */
 
 
 @endphp
@@ -157,10 +161,16 @@ dd($lg,$sm, $xs);
 
 
 <main>
-	<div class="container">
-		
+		<div class="container">
+		<div class="cards">
+		@foreach ($total as $item)
+			<div class="card">
+			<img src="{{$item['src']}}" alt="">
 
+			</div>
 
-
-	</div>
+		@endforeach
+		</div>
+		</div>
+	
 </main>
