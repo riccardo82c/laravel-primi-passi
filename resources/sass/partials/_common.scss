@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images8.alphacoders.com/522/thumb-1920-522915.jpg');
+    height: 100vh;
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 40px;
+
+}
+
+h2 {
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+button {
+
+    border: 1px solid $button-bcg;
+    background-color: white;
+    color: $button-bcg;
+    border-radius: 10px;
+    font-size: 25px;
+
+
+
+    &:hover {
+        border: 1px solid white;
+        background-color: $button-bcg;
+        color: white;
+
+        a {
+            color: white;
+        }
+    }
+
+    a {
+        display: block;
+        padding: 20px 30px;
+
+        color: $button-bcg;
+    }
+}
