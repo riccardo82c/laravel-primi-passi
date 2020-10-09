@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
 }
 
 body {
-    background-image: url('https://images8.alphacoders.com/522/thumb-1920-522915.jpg');
-    font-family: 'Poppins',
-        sans-serif;
+
     width: 100%;
 }
 
@@ -37,6 +37,12 @@ a {
     &:hover {
         color: #333;
     }
+
+
+}
+
+a.active {
+    color: #333;
 }
 
 .container {

@@ -1,4 +1,5 @@
 main {
+    background-image: url('https://images8.alphacoders.com/522/thumb-1920-522915.jpg');
     height: 100%;
     width: 100%;
     position: relative;
@@ -29,22 +30,43 @@ main {
 
         padding: 10px 0;
 
+
+        .card-divider {
+            width: 1200px;
+            min-width: 390px;
+            text-align: center;
+            margin: 20px 0;
+            background-color: $button-bcg;
+            border: 1px solid white;
+
+            h2 {
+                text-transform: uppercase;
+            }
+
+        }
+
         .card {
             padding: 5px;
 
 
 
             img {
-                max-width: 380px;
-                border-radius: 10px;
+                max-width: 390px;
+
                 border: 1px solid $button-bcg;
-                opacity: 0.85;
-                transition: all .4s;
+                transition: all .4s ease;
+
 
                 &:hover {
+                    box-shadow: $img-shad;
+                    cursor: pointer;
+                }
 
+                &:hover~p {
+                    box-shadow: $subtitle-shad;
                     opacity: 1;
                 }
+
             }
 
 
@@ -54,6 +76,8 @@ main {
                 padding: 5px;
                 color: $button-bcg;
                 background-color: white;
+                transition: all 1s ease;
+                opacity: 0;
 
             }
         }
@@ -62,5 +86,5 @@ main {
 
 
 .full-heigth {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 80px);
 }

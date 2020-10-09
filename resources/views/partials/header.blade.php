@@ -8,18 +8,21 @@
 	<title>La Molisana</title>
 </head>
 
-
 <header>
 	<div class="container">
 	<nav>
 		<img src="{{ asset('img/logo2.png') }}" alt="">
 		<ul>
-		<li><a href="{{route('home')}}">Home</a></li>
-		<li><a href="{{route('prod')}}">Prodotti</a></li>
-		<li><a href="{{route('cont')}}">Contatti</a></li>
+		<li><a href="{{route('home')}}" class="{{url()->current()==route('home') ? 'active' : ''}}">Home</a></li>
+		<li><a href="{{route('prod')}}" class="{{url()->current()==route('prod') ? 'active' : ''}}">Prodotti</a></li>
+		<li><a href="{{route('cont')}}" class="{{url()->current()==route('cont') ? 'active' : ''}}">Contatti</a></li>
 		</ul>
 	</nav>
 </div>
 </header>
+
+
+
+
 
 
