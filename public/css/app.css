@@ -1,4 +1,16 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);* {
+@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);/* 
+@mixin card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+        0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.5s cubic-bezier(.25, .8, .25, 1);
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+} */
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,12 +23,12 @@ body {
 
 h1 {
   font-size: 40px;
-  color: white;
+  color: #f5efe5;
 }
 
 h2 {
   font-size: 30px;
-  color: white;
+  color: #f5efe5;
 }
 
 ul {
@@ -24,7 +36,7 @@ ul {
 }
 
 a {
-  color: white;
+  color: #f5efe5;
   text-decoration: none;
 }
 
@@ -37,28 +49,28 @@ a.active {
 }
 
 .container {
-  max-width: 1200px;
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
 }
 
 button {
   border: 1px solid #165d69;
-  background-color: white;
+  background-color: #f5efe5;
   color: #165d69;
   font-size: 25px;
   transition: all 0.2s;
 }
 
 button:hover {
-  border: 1px solid white;
+  border: 1px solid #f5efe5;
   background-color: #165d69;
-  color: white;
+  color: #f5efe5;
 }
 
 button:hover a {
-  color: white;
+  color: #f5efe5;
 }
 
 button a {
@@ -71,8 +83,8 @@ header {
   background-color: #165d69;
   width: 100%;
   height: 80px;
-  color: white;
-  border-bottom: 1px solid white;
+  color: #f5efe5;
+  border-bottom: 1px solid #f5efe5;
 }
 
 header nav {
@@ -107,9 +119,11 @@ main .center-container {
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: stretch;
   align-items: center;
-  background-color: #457c8549;
+  background-color: #00000071;
   padding: 50px;
 }
 
@@ -122,6 +136,7 @@ main .cards {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: stretch;
   padding: 10px 0;
 }
 
@@ -131,7 +146,7 @@ main .cards .card-divider {
   text-align: center;
   margin: 20px 0;
   background-color: #165d69;
-  border: 1px solid white;
+  border: 1px solid #f5efe5;
 }
 
 main .cards .card-divider h2 {
@@ -162,7 +177,7 @@ main .cards .card .titolo-card {
   text-align: center;
   padding: 5px;
   color: #165d69;
-  background-color: white;
+  background-color: #f5efe5;
   transition: all 1s ease;
   opacity: 0;
 }

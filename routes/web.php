@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/prodotti', function () {
-    return view('prodotti');
-})->name('prod');
+Route::get('/prodotti', 'Retriever@index')->name('prod');
 
 Route::get('/contatti', function () {
     return view('contatti');

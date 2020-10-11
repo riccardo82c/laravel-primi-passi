@@ -2,10 +2,10 @@ header {
 
     background-color: $button-bcg;
     width: 100%;
-    height: 80px;
+    height: $header-height;
 
-    color: white;
-    border-bottom: 1px solid white;
+    color: $font-primary;
+    border-bottom: 1px solid $font-primary;
 
     nav {
         height: 100%;

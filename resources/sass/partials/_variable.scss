@@ -1,8 +1,16 @@
-$font-primary: white;
+// color and shadow
+
+$font-primary: #f5efe5;
+$font-link-active: #333;
 $button-bcg : #165d69;
+$layover-bcg: #00000071;
 
 $subtitle-shad: 0 19px 38px rgba(0, 0, 0, 0.30),
 0 15px 12px rgba(0, 0, 0, 0.22);
 
 $img-shad: 0 10px 20px rgba(0, 0, 0, 0.19),
 0 6px 6px rgba(0, 0, 0, 0.23);
+
+// height
+
+$header-height: 80px;

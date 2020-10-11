@@ -5,31 +5,20 @@ main {
     position: relative;
 
     .center-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #457c8549;
+        @include center-box;
+        @include flex-content(column, stretch, center);
+        background-color: $layover-bcg;
         padding: 50px;
 
         .btn-cta {
             margin-top: 50px;
         }
 
-
     }
 
     .cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-
+        @include flex-content(row, center, stretch);
         padding: 10px 0;
-
 
         .card-divider {
             width: 1200px;
@@ -37,7 +26,7 @@ main {
             text-align: center;
             margin: 20px 0;
             background-color: $button-bcg;
-            border: 1px solid white;
+            border: 1px solid $font-primary;
 
             h2 {
                 text-transform: uppercase;
@@ -75,7 +64,7 @@ main {
                 text-align: center;
                 padding: 5px;
                 color: $button-bcg;
-                background-color: white;
+                background-color: $font-primary;
                 transition: all 1s ease;
                 opacity: 0;
 
@@ -86,5 +75,5 @@ main {
 
 
 .full-heigth {
-    height: calc(100vh - 80px);
+    height: calc(100vh - #{$header-height});
 }

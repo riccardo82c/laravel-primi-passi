@@ -31,41 +31,39 @@ ul {
 
 
 a {
-    color: white;
+    color: $font-primary;
     text-decoration: none;
 
     &:hover {
-        color: #333;
+        color: $font-link-active;
     }
 
 
 }
 
 a.active {
-    color: #333;
+    color: $font-link-active;
 }
 
 .container {
-    max-width: 1200px;
-    width: 80%;
-    margin: 0 auto;
+    @include max-wid1200;
     height: 100%;
 }
 
 button {
     border: 1px solid $button-bcg;
-    background-color: white;
+    background-color: $font-primary;
     color: $button-bcg;
     font-size: 25px;
     transition: all .2s;
 
     &:hover {
-        border: 1px solid white;
+        border: 1px solid $font-primary;
         background-color: $button-bcg;
-        color: white;
+        color: $font-primary;
 
         a {
-            color: white;
+            color: $font-primary;
         }
     }
 
